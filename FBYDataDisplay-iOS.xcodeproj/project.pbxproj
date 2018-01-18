@@ -15,6 +15,10 @@
 		45D73E2820107F72004FD22D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E2720107F72004FD22D /* main.m */; };
 		45D73E3220107F73004FD22D /* FBYDataDisplay_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E3120107F73004FD22D /* FBYDataDisplay_iOSTests.m */; };
 		45D73E3D20107F73004FD22D /* FBYDataDisplay_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E3C20107F73004FD22D /* FBYDataDisplay_iOSUITests.m */; };
+		45D73E4D20108203004FD22D /* FBYLineGraphBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E4C20108203004FD22D /* FBYLineGraphBaseView.m */; };
+		45D73E502010825F004FD22D /* FBYLineGraphContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E4F2010825F004FD22D /* FBYLineGraphContentView.m */; };
+		45D73E532010827C004FD22D /* FBYLineGraphColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E522010827C004FD22D /* FBYLineGraphColorView.m */; };
+		45D73E5620108298004FD22D /* FBYLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E5520108298004FD22D /* FBYLineGraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		45D73E3820107F73004FD22D /* FBYDataDisplay-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FBYDataDisplay-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D73E3C20107F73004FD22D /* FBYDataDisplay_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYDataDisplay_iOSUITests.m; sourceTree = "<group>"; };
 		45D73E3E20107F73004FD22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D73E4B20108203004FD22D /* FBYLineGraphBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBYLineGraphBaseView.h; sourceTree = "<group>"; };
+		45D73E4C20108203004FD22D /* FBYLineGraphBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYLineGraphBaseView.m; sourceTree = "<group>"; };
+		45D73E4E2010825F004FD22D /* FBYLineGraphContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBYLineGraphContentView.h; sourceTree = "<group>"; };
+		45D73E4F2010825F004FD22D /* FBYLineGraphContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYLineGraphContentView.m; sourceTree = "<group>"; };
+		45D73E512010827C004FD22D /* FBYLineGraphColorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBYLineGraphColorView.h; sourceTree = "<group>"; };
+		45D73E522010827C004FD22D /* FBYLineGraphColorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYLineGraphColorView.m; sourceTree = "<group>"; };
+		45D73E5420108298004FD22D /* FBYLineGraphView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBYLineGraphView.h; sourceTree = "<group>"; };
+		45D73E5520108298004FD22D /* FBYLineGraphView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYLineGraphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 		45D73E1720107F72004FD22D /* FBYDataDisplay-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				45D73E4A20107FD5004FD22D /* FBYLineGraph */,
 				45D73E1820107F72004FD22D /* AppDelegate.h */,
 				45D73E1920107F72004FD22D /* AppDelegate.m */,
 				45D73E1B20107F72004FD22D /* ViewController.h */,
@@ -130,6 +143,21 @@
 				45D73E3E20107F73004FD22D /* Info.plist */,
 			);
 			path = "FBYDataDisplay-iOSUITests";
+			sourceTree = "<group>";
+		};
+		45D73E4A20107FD5004FD22D /* FBYLineGraph */ = {
+			isa = PBXGroup;
+			children = (
+				45D73E4B20108203004FD22D /* FBYLineGraphBaseView.h */,
+				45D73E4C20108203004FD22D /* FBYLineGraphBaseView.m */,
+				45D73E4E2010825F004FD22D /* FBYLineGraphContentView.h */,
+				45D73E4F2010825F004FD22D /* FBYLineGraphContentView.m */,
+				45D73E512010827C004FD22D /* FBYLineGraphColorView.h */,
+				45D73E522010827C004FD22D /* FBYLineGraphColorView.m */,
+				45D73E5420108298004FD22D /* FBYLineGraphView.h */,
+				45D73E5520108298004FD22D /* FBYLineGraphView.m */,
+			);
+			path = FBYLineGraph;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D73E1D20107F72004FD22D /* ViewController.m in Sources */,
+				45D73E502010825F004FD22D /* FBYLineGraphContentView.m in Sources */,
 				45D73E2820107F72004FD22D /* main.m in Sources */,
+				45D73E532010827C004FD22D /* FBYLineGraphColorView.m in Sources */,
+				45D73E5620108298004FD22D /* FBYLineGraphView.m in Sources */,
+				45D73E4D20108203004FD22D /* FBYLineGraphBaseView.m in Sources */,
 				45D73E1A20107F72004FD22D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
