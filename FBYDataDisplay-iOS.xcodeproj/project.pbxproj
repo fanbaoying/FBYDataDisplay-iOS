@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45D73E1A20107F72004FD22D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E1920107F72004FD22D /* AppDelegate.m */; };
+		45D73E1D20107F72004FD22D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E1C20107F72004FD22D /* ViewController.m */; };
+		45D73E2020107F72004FD22D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D73E1E20107F72004FD22D /* Main.storyboard */; };
+		45D73E2220107F72004FD22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D73E2120107F72004FD22D /* Assets.xcassets */; };
+		45D73E2520107F72004FD22D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D73E2320107F72004FD22D /* LaunchScreen.storyboard */; };
+		45D73E2820107F72004FD22D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E2720107F72004FD22D /* main.m */; };
+		45D73E3220107F73004FD22D /* FBYDataDisplay_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E3120107F73004FD22D /* FBYDataDisplay_iOSTests.m */; };
+		45D73E3D20107F73004FD22D /* FBYDataDisplay_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E3C20107F73004FD22D /* FBYDataDisplay_iOSUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45D73E2E20107F73004FD22D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45D73E0D20107F72004FD22D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45D73E1420107F72004FD22D;
+			remoteInfo = "FBYDataDisplay-iOS";
+		};
+		45D73E3920107F73004FD22D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45D73E0D20107F72004FD22D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45D73E1420107F72004FD22D;
+			remoteInfo = "FBYDataDisplay-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45D73E1520107F72004FD22D /* FBYDataDisplay-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FBYDataDisplay-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D73E1820107F72004FD22D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		45D73E1920107F72004FD22D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		45D73E1B20107F72004FD22D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		45D73E1C20107F72004FD22D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		45D73E1F20107F72004FD22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45D73E2120107F72004FD22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45D73E2420107F72004FD22D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45D73E2620107F72004FD22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D73E2720107F72004FD22D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45D73E2D20107F73004FD22D /* FBYDataDisplay-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FBYDataDisplay-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D73E3120107F73004FD22D /* FBYDataDisplay_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYDataDisplay_iOSTests.m; sourceTree = "<group>"; };
+		45D73E3320107F73004FD22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45D73E3820107F73004FD22D /* FBYDataDisplay-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FBYDataDisplay-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D73E3C20107F73004FD22D /* FBYDataDisplay_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYDataDisplay_iOSUITests.m; sourceTree = "<group>"; };
+		45D73E3E20107F73004FD22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45D73E1220107F72004FD22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D73E2A20107F73004FD22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D73E3520107F73004FD22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45D73E0C20107F72004FD22D = {
+			isa = PBXGroup;
+			children = (
+				45D73E1720107F72004FD22D /* FBYDataDisplay-iOS */,
+				45D73E3020107F73004FD22D /* FBYDataDisplay-iOSTests */,
+				45D73E3B20107F73004FD22D /* FBYDataDisplay-iOSUITests */,
+				45D73E1620107F72004FD22D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45D73E1620107F72004FD22D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45D73E1520107F72004FD22D /* FBYDataDisplay-iOS.app */,
+				45D73E2D20107F73004FD22D /* FBYDataDisplay-iOSTests.xctest */,
+				45D73E3820107F73004FD22D /* FBYDataDisplay-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45D73E1720107F72004FD22D /* FBYDataDisplay-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				45D73E1820107F72004FD22D /* AppDelegate.h */,
+				45D73E1920107F72004FD22D /* AppDelegate.m */,
+				45D73E1B20107F72004FD22D /* ViewController.h */,
+				45D73E1C20107F72004FD22D /* ViewController.m */,
+				45D73E1E20107F72004FD22D /* Main.storyboard */,
+				45D73E2120107F72004FD22D /* Assets.xcassets */,
+				45D73E2320107F72004FD22D /* LaunchScreen.storyboard */,
+				45D73E2620107F72004FD22D /* Info.plist */,
+				45D73E2720107F72004FD22D /* main.m */,
+			);
+			path = "FBYDataDisplay-iOS";
+			sourceTree = "<group>";
+		};
+		45D73E3020107F73004FD22D /* FBYDataDisplay-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				45D73E3120107F73004FD22D /* FBYDataDisplay_iOSTests.m */,
+				45D73E3320107F73004FD22D /* Info.plist */,
+			);
+			path = "FBYDataDisplay-iOSTests";
+			sourceTree = "<group>";
+		};
+		45D73E3B20107F73004FD22D /* FBYDataDisplay-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				45D73E3C20107F73004FD22D /* FBYDataDisplay_iOSUITests.m */,
+				45D73E3E20107F73004FD22D /* Info.plist */,
+			);
+			path = "FBYDataDisplay-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45D73E1420107F72004FD22D /* FBYDataDisplay-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45D73E4120107F73004FD22D /* Build configuration list for PBXNativeTarget "FBYDataDisplay-iOS" */;
+			buildPhases = (
+				45D73E1120107F72004FD22D /* Sources */,
+				45D73E1220107F72004FD22D /* Frameworks */,
+				45D73E1320107F72004FD22D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FBYDataDisplay-iOS";
+			productName = "FBYDataDisplay-iOS";
+			productReference = 45D73E1520107F72004FD22D /* FBYDataDisplay-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45D73E2C20107F73004FD22D /* FBYDataDisplay-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45D73E4420107F73004FD22D /* Build configuration list for PBXNativeTarget "FBYDataDisplay-iOSTests" */;
+			buildPhases = (
+				45D73E2920107F73004FD22D /* Sources */,
+				45D73E2A20107F73004FD22D /* Frameworks */,
+				45D73E2B20107F73004FD22D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45D73E2F20107F73004FD22D /* PBXTargetDependency */,
+			);
+			name = "FBYDataDisplay-iOSTests";
+			productName = "FBYDataDisplay-iOSTests";
+			productReference = 45D73E2D20107F73004FD22D /* FBYDataDisplay-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45D73E3720107F73004FD22D /* FBYDataDisplay-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45D73E4720107F73004FD22D /* Build configuration list for PBXNativeTarget "FBYDataDisplay-iOSUITests" */;
+			buildPhases = (
+				45D73E3420107F73004FD22D /* Sources */,
+				45D73E3520107F73004FD22D /* Frameworks */,
+				45D73E3620107F73004FD22D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45D73E3A20107F73004FD22D /* PBXTargetDependency */,
+			);
+			name = "FBYDataDisplay-iOSUITests";
+			productName = "FBYDataDisplay-iOSUITests";
+			productReference = 45D73E3820107F73004FD22D /* FBYDataDisplay-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45D73E0D20107F72004FD22D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "FBYDataDisplay-iOS";
+				TargetAttributes = {
+					45D73E1420107F72004FD22D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					45D73E2C20107F73004FD22D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45D73E1420107F72004FD22D;
+					};
+					45D73E3720107F73004FD22D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45D73E1420107F72004FD22D;
+					};
+				};
+			};
+			buildConfigurationList = 45D73E1020107F72004FD22D /* Build configuration list for PBXProject "FBYDataDisplay-iOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45D73E0C20107F72004FD22D;
+			productRefGroup = 45D73E1620107F72004FD22D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45D73E1420107F72004FD22D /* FBYDataDisplay-iOS */,
+				45D73E2C20107F73004FD22D /* FBYDataDisplay-iOSTests */,
+				45D73E3720107F73004FD22D /* FBYDataDisplay-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45D73E1320107F72004FD22D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D73E2520107F72004FD22D /* LaunchScreen.storyboard in Resources */,
+				45D73E2220107F72004FD22D /* Assets.xcassets in Resources */,
+				45D73E2020107F72004FD22D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D73E2B20107F73004FD22D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D73E3620107F73004FD22D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45D73E1120107F72004FD22D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D73E1D20107F72004FD22D /* ViewController.m in Sources */,
+				45D73E2820107F72004FD22D /* main.m in Sources */,
+				45D73E1A20107F72004FD22D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D73E2920107F73004FD22D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D73E3220107F73004FD22D /* FBYDataDisplay_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45D73E3420107F73004FD22D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45D73E3D20107F73004FD22D /* FBYDataDisplay_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45D73E2F20107F73004FD22D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45D73E1420107F72004FD22D /* FBYDataDisplay-iOS */;
+			targetProxy = 45D73E2E20107F73004FD22D /* PBXContainerItemProxy */;
+		};
+		45D73E3A20107F73004FD22D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45D73E1420107F72004FD22D /* FBYDataDisplay-iOS */;
+			targetProxy = 45D73E3920107F73004FD22D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45D73E1E20107F72004FD22D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45D73E1F20107F72004FD22D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45D73E2320107F72004FD22D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45D73E2420107F72004FD22D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45D73E3F20107F73004FD22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		45D73E4020107F73004FD22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45D73E4220107F73004FD22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZQEMVF63J;
+				INFOPLIST_FILE = "FBYDataDisplay-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FBYDataDisplay-iOS.a.FBYDataDisplay-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45D73E4320107F73004FD22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZQEMVF63J;
+				INFOPLIST_FILE = "FBYDataDisplay-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FBYDataDisplay-iOS.a.FBYDataDisplay-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		45D73E4520107F73004FD22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZQEMVF63J;
+				INFOPLIST_FILE = "FBYDataDisplay-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FBYDataDisplay-iOS.a.FBYDataDisplay-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBYDataDisplay-iOS.app/FBYDataDisplay-iOS";
+			};
+			name = Debug;
+		};
+		45D73E4620107F73004FD22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZQEMVF63J;
+				INFOPLIST_FILE = "FBYDataDisplay-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FBYDataDisplay-iOS.a.FBYDataDisplay-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBYDataDisplay-iOS.app/FBYDataDisplay-iOS";
+			};
+			name = Release;
+		};
+		45D73E4820107F73004FD22D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZQEMVF63J;
+				INFOPLIST_FILE = "FBYDataDisplay-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FBYDataDisplay-iOS.a.FBYDataDisplay-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FBYDataDisplay-iOS";
+			};
+			name = Debug;
+		};
+		45D73E4920107F73004FD22D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8ZQEMVF63J;
+				INFOPLIST_FILE = "FBYDataDisplay-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FBYDataDisplay-iOS.a.FBYDataDisplay-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "FBYDataDisplay-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45D73E1020107F72004FD22D /* Build configuration list for PBXProject "FBYDataDisplay-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D73E3F20107F73004FD22D /* Debug */,
+				45D73E4020107F73004FD22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45D73E4120107F73004FD22D /* Build configuration list for PBXNativeTarget "FBYDataDisplay-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D73E4220107F73004FD22D /* Debug */,
+				45D73E4320107F73004FD22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45D73E4420107F73004FD22D /* Build configuration list for PBXNativeTarget "FBYDataDisplay-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D73E4520107F73004FD22D /* Debug */,
+				45D73E4620107F73004FD22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45D73E4720107F73004FD22D /* Build configuration list for PBXNativeTarget "FBYDataDisplay-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45D73E4820107F73004FD22D /* Debug */,
+				45D73E4920107F73004FD22D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45D73E0D20107F72004FD22D /* Project object */;
+}
