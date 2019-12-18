@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2653F80C23AA01F4005F56BB /* FBYBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2653F80B23AA01F4005F56BB /* FBYBarChartView.m */; };
 		45D73E1A20107F72004FD22D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E1920107F72004FD22D /* AppDelegate.m */; };
 		45D73E1D20107F72004FD22D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E1C20107F72004FD22D /* ViewController.m */; };
 		45D73E2020107F72004FD22D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D73E1E20107F72004FD22D /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2653F80A23AA01F4005F56BB /* FBYBarChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBYBarChartView.h; sourceTree = "<group>"; };
+		2653F80B23AA01F4005F56BB /* FBYBarChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYBarChartView.m; sourceTree = "<group>"; };
 		45D73E1520107F72004FD22D /* FBYDataDisplay-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FBYDataDisplay-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D73E1820107F72004FD22D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45D73E1920107F72004FD22D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2653F80923AA01D3005F56BB /* FBYBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				2653F80A23AA01F4005F56BB /* FBYBarChartView.h */,
+				2653F80B23AA01F4005F56BB /* FBYBarChartView.m */,
+			);
+			path = FBYBarChart;
+			sourceTree = "<group>";
+		};
 		45D73E0C20107F72004FD22D = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +125,7 @@
 		45D73E1720107F72004FD22D /* FBYDataDisplay-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2653F80923AA01D3005F56BB /* FBYBarChart */,
 				45D73E4A20107FD5004FD22D /* FBYLineGraph */,
 				45D73E1820107F72004FD22D /* AppDelegate.h */,
 				45D73E1920107F72004FD22D /* AppDelegate.m */,
@@ -222,7 +235,7 @@
 		45D73E0D20107F72004FD22D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "FBYDataDisplay-iOS";
 				TargetAttributes = {
 					45D73E1420107F72004FD22D = {
@@ -300,6 +313,7 @@
 				45D73E5620108298004FD22D /* FBYLineGraphView.m in Sources */,
 				45D73E4D20108203004FD22D /* FBYLineGraphBaseView.m in Sources */,
 				45D73E1A20107F72004FD22D /* AppDelegate.m in Sources */,
+				2653F80C23AA01F4005F56BB /* FBYBarChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +382,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -375,6 +390,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -423,6 +439,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -430,6 +447,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -463,7 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8ZQEMVF63J;
+				DEVELOPMENT_TEAM = QWXF6GB4AV;
 				INFOPLIST_FILE = "FBYDataDisplay-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FBYDataDisplay-iOS.a.FBYDataDisplay-iOS";
