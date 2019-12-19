@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2653F80C23AA01F4005F56BB /* FBYBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2653F80B23AA01F4005F56BB /* FBYBarChartView.m */; };
+		2653F81023AA3F97005F56BB /* FBYRingChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2653F80F23AA3F97005F56BB /* FBYRingChartView.m */; };
 		45D73E1A20107F72004FD22D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E1920107F72004FD22D /* AppDelegate.m */; };
 		45D73E1D20107F72004FD22D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D73E1C20107F72004FD22D /* ViewController.m */; };
 		45D73E2020107F72004FD22D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D73E1E20107F72004FD22D /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		2653F80A23AA01F4005F56BB /* FBYBarChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBYBarChartView.h; sourceTree = "<group>"; };
 		2653F80B23AA01F4005F56BB /* FBYBarChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYBarChartView.m; sourceTree = "<group>"; };
+		2653F80E23AA3F97005F56BB /* FBYRingChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBYRingChartView.h; sourceTree = "<group>"; };
+		2653F80F23AA3F97005F56BB /* FBYRingChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBYRingChartView.m; sourceTree = "<group>"; };
 		45D73E1520107F72004FD22D /* FBYDataDisplay-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FBYDataDisplay-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D73E1820107F72004FD22D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45D73E1920107F72004FD22D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,6 +105,15 @@
 			path = FBYBarChart;
 			sourceTree = "<group>";
 		};
+		2653F80D23AA3F82005F56BB /* FBYRingChart */ = {
+			isa = PBXGroup;
+			children = (
+				2653F80E23AA3F97005F56BB /* FBYRingChartView.h */,
+				2653F80F23AA3F97005F56BB /* FBYRingChartView.m */,
+			);
+			path = FBYRingChart;
+			sourceTree = "<group>";
+		};
 		45D73E0C20107F72004FD22D = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +137,7 @@
 		45D73E1720107F72004FD22D /* FBYDataDisplay-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2653F80D23AA3F82005F56BB /* FBYRingChart */,
 				2653F80923AA01D3005F56BB /* FBYBarChart */,
 				45D73E4A20107FD5004FD22D /* FBYLineGraph */,
 				45D73E1820107F72004FD22D /* AppDelegate.h */,
@@ -314,6 +327,7 @@
 				45D73E4D20108203004FD22D /* FBYLineGraphBaseView.m in Sources */,
 				45D73E1A20107F72004FD22D /* AppDelegate.m in Sources */,
 				2653F80C23AA01F4005F56BB /* FBYBarChartView.m in Sources */,
+				2653F81023AA3F97005F56BB /* FBYRingChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

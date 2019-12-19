@@ -10,6 +10,7 @@
 
 #import "FBYLineGraphView.h"
 #import "FBYBarChartView.h"
+#import "FBYRingChartView.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
@@ -24,6 +25,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self lineGraphView];
     [self barChartView];
+    [self ringChartView];
 }
 
 - (void)lineGraphView {
@@ -45,7 +47,7 @@
     
     [self.view addSubview:LineGraphView];
 }
-
+// 柱状统计图
 - (void)barChartView {
     
     UILabel *titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 295, CGRectGetWidth(self.view.frame), 20)];
@@ -79,6 +81,35 @@
     bar.margin = 20;
     
     [bar drawChart];
+}
+
+// 环形统计图
+- (void)ringChartView {
+    
+    UILabel *titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 530, CGRectGetWidth(self.view.frame), 20)];
+    titleLab.text = @"环形统计图";
+    titleLab.font = [UIFont systemFontOfSize:15];
+    titleLab.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:titleLab];
+    
+    NSArray *colorArray = @[[self colorWithHexString:@"#007aff" alpha:1],
+                            [self colorWithHexString:@"#3ed74d" alpha:1],
+                            [self colorWithHexString:@"#ff9304" alpha:1],
+                            [self colorWithHexString:@"#c22efb" alpha:1],
+                            [self colorWithHexString:@"#93a8ff" alpha:1],
+                            [self colorWithHexString:@"#fcd640" alpha:1]];
+    
+    NSArray *valueArray = @[@13,@30,@52,@73,@91,@34];
+    NSArray *titleArray = @[@"一月",@"二月",@"三月",@"四月",@"五月",@"六月"];
+    
+    FBYRingChartView *ring = [[FBYRingChartView alloc] initWithFrame:CGRectMake(60, 560, SCREEN_WIDTH - 60, 200) markViewDirection:MarkViewDirectionRight];
+    [self.view addSubview:ring];
+    ring.colorArray = colorArray;
+    ring.valueArray = valueArray;
+    ring.titleArray = titleArray;
+    ring.ringWidth = 20.0;
+    ring.title = @"总计";
+    [ring drawChart];
 }
 
 #pragma mark 设置16进制颜色
