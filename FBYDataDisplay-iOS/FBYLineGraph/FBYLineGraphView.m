@@ -81,6 +81,7 @@
         
         self.titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, CGRectGetWidth(self.frame), 20)];
         self.titleLab.text = self.title;
+        self.titleLab.textColor = [UIColor blackColor];
         self.titleLab.font = [UIFont systemFontOfSize:15];
         self.titleLab.textAlignment = NSTextAlignmentCenter;
         [self addSubview:self.titleLab];

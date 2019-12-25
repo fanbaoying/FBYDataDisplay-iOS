@@ -132,6 +132,7 @@
         
         UILabel *markLab = [[UILabel alloc] initWithFrame:CGRectMake(0, self.startPoint.y - YMARKLAB_HEIGHT / 2 + i * self.yScaleMarkLEN, YMARKLAB_WIDTH, YMARKLAB_HEIGHT)];
         markLab.textAlignment = NSTextAlignmentRight;
+        markLab.textColor = [UIColor blackColor];
         markLab.font = [UIFont systemFontOfSize:12.0];
         markLab.text = [NSString stringWithFormat:@"%@", self.yMarkTitles[self.yMarkTitles.count - 1 - i]];
         [self addSubview:markLab];
@@ -144,6 +145,7 @@
     for (int i = 0;i < self.xMarkTitles.count; i ++) {
         UILabel *markLab = [[UILabel alloc] initWithFrame:CGRectMake(self.startPoint.x - XMARKLAB_WIDTH / 2 + i * self.xScaleMarkLEN, self.yAxis_L + self.startPoint.y + YMARKLAB_HEIGHT / 2, XMARKLAB_WIDTH, XMARKLAB_HEIGHT)];
         markLab.textAlignment = NSTextAlignmentCenter;
+        markLab.textColor = [UIColor blackColor];
         markLab.font = [UIFont systemFontOfSize:11.0];
         markLab.text = self.xMarkTitles[i];
         [self addSubview:markLab];

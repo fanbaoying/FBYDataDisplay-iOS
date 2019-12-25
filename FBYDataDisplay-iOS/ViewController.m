@@ -14,8 +14,10 @@
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-@interface ViewController ()
-
+#define STATUS_HEIGHT [[UIApplication sharedApplication] statusBarFrame].size.height
+#define TABBAR_HEIGHT ([[UIApplication sharedApplication] statusBarFrame].size.height>20.1?34.0:0.0)
+@interface ViewController ()<UIScrollViewDelegate>
+@property(strong,nonatomic)UIScrollView *baseScrollView;
 @end
 
 @implementation ViewController
@@ -23,14 +25,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.baseScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, STATUS_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - TABBAR_HEIGHT - STATUS_HEIGHT)];
+//    self.baseScrollView.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT);
+    self.baseScrollView.showsVerticalScrollIndicator = NO;
+    [self.view addSubview:_baseScrollView];
+    
+    // 折线统计图
     [self lineGraphView];
+    // 柱状统计图
     [self barChartView];
+    // 环形统计图
     [self ringChartView];
 }
 
 - (void)lineGraphView {
     // 初始化折线图
-    FBYLineGraphView *LineGraphView = [[FBYLineGraphView alloc] initWithFrame:CGRectMake(10, 60, SCREEN_WIDTH - 20, 220)];
+    FBYLineGraphView *LineGraphView = [[FBYLineGraphView alloc] initWithFrame:CGRectMake(10, 0, SCREEN_WIDTH - 20, 220)];
     
     // 设置折线图属性
     
@@ -45,16 +56,17 @@
     //设置完数据等属性后绘图折线图
     [LineGraphView mapping];
     
-    [self.view addSubview:LineGraphView];
+    [self.baseScrollView addSubview:LineGraphView];
 }
 // 柱状统计图
 - (void)barChartView {
     
-    UILabel *titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 295, CGRectGetWidth(self.view.frame), 20)];
+    UILabel *titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 235, CGRectGetWidth(self.view.frame), 20)];
     titleLab.text = @"柱状统计图";
+    titleLab.textColor = [UIColor blackColor];
     titleLab.font = [UIFont systemFontOfSize:15];
     titleLab.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:titleLab];
+    [self.baseScrollView addSubview:titleLab];
     
     ///渐变色
     NSArray *color1 = @[[self colorWithHexString:@"#07B2F6" alpha:1],[self colorWithHexString:@"#06A0DD" alpha:1]];
@@ -65,8 +77,8 @@
     NSArray *color6 = @[[self colorWithHexString:@"#FC5592" alpha:1],[self colorWithHexString:@"#E34C83" alpha:1]];
     
     
-    FBYBarChartView *bar = [[FBYBarChartView alloc] initWithFrame:CGRectMake(10, 315, SCREEN_WIDTH - 20, 200) withMarkLabelCount:6 withOrientationType:OrientationVertical];
-    [self.view addSubview:bar];
+    FBYBarChartView *bar = [[FBYBarChartView alloc] initWithFrame:CGRectMake(10, 255, SCREEN_WIDTH - 20, 200) withMarkLabelCount:6 withOrientationType:OrientationVertical];
+    [self.baseScrollView addSubview:bar];
     bar.titleArray = @[@"一月",@"二月",@"三月",@"四月",@"五月",@"六月",@"七月",@"八月",@"九月",@"十月",@"十一月",@"十二月"];
     bar.valueArray = @[@"15",@"27",@"13",@"42",@"34",@"2",@"24",@"41",@"12",@"56",@"69",@"33"];
     bar.colorArray = @[color1,color2,color3,color4,color5,color6,color1,color2,color3,color4,color5,color6];
@@ -86,11 +98,12 @@
 // 环形统计图
 - (void)ringChartView {
     
-    UILabel *titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 530, CGRectGetWidth(self.view.frame), 20)];
+    UILabel *titleLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 470, CGRectGetWidth(self.view.frame), 20)];
     titleLab.text = @"环形统计图";
+    titleLab.textColor = [UIColor blackColor];
     titleLab.font = [UIFont systemFontOfSize:15];
     titleLab.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:titleLab];
+    [self.baseScrollView addSubview:titleLab];
     
     NSArray *colorArray = @[[self colorWithHexString:@"#007aff" alpha:1],
                             [self colorWithHexString:@"#3ed74d" alpha:1],
@@ -102,8 +115,8 @@
     NSArray *valueArray = @[@13,@30,@52,@73,@91,@34];
     NSArray *titleArray = @[@"一月",@"二月",@"三月",@"四月",@"五月",@"六月"];
     
-    FBYRingChartView *ring = [[FBYRingChartView alloc] initWithFrame:CGRectMake(60, 560, SCREEN_WIDTH - 60, 200) markViewDirection:MarkViewDirectionRight];
-    [self.view addSubview:ring];
+    FBYRingChartView *ring = [[FBYRingChartView alloc] initWithFrame:CGRectMake(60, 500, SCREEN_WIDTH - 60, 200) markViewDirection:MarkViewDirectionRight];
+    [self.baseScrollView addSubview:ring];
     ring.colorArray = colorArray;
     ring.valueArray = valueArray;
     ring.titleArray = titleArray;
